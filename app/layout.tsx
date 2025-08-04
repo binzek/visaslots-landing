@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 
+import { HeaderComponent } from "@/components";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,10 @@ interface Props {
 export default function RootLayout({ children }: Readonly<Props>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <HeaderComponent />
+        {children}
+      </body>
     </html>
   );
 }
