@@ -1,3 +1,9 @@
+import { HeroSectionComponent } from "@/components";
+
 export default function AppPage() {
-  return <div>AppPage</div>;
+  return (
+    <main>
+      <HeroSectionComponent />
+    </main>
+  );
 }
